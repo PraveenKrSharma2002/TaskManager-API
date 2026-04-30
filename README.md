@@ -1,11 +1,11 @@
-# 🚀 Task Management API (Flask + JWT)
+#  Task Management API (Flask + JWT)
 
 A production-like Task Management REST API built using Flask with JWT authentication.  
 This API allows users to securely manage tasks with role-based access, pagination, and filtering.
 
 ---
 
-## ✨ Features
+##  Features
 
 - 🔐 User Authentication (JWT)
 - 📋 CRUD Operations on Tasks
@@ -16,7 +16,7 @@ This API allows users to securely manage tasks with role-based access, paginatio
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - Python (Flask)
 - SQLAlchemy (ORM)
@@ -27,24 +27,24 @@ This API allows users to securely manage tasks with role-based access, paginatio
 
 ## ⚙️ Setup & Installation
 
-## 1️⃣ Clone the Repository
+## 1.Clone the Repository
 
 git clone https://github.com/PraveenKrSharma2002/TaskManager-API.git
 cd TaskManager
 
-## 2️⃣ Create Virtual Environment
+## 2.Create Virtual Environment
 
 python -m venv venv
 
-## 3️⃣ Activate Virtual Environment
+## 3.Activate Virtual Environment
 
 Windows: venv\Scripts\activate
 
-## 4️⃣ Install Dependencies
+## 4.Install Dependencies
 
 pip install -r requirements.txt
 
-## 5️⃣ Run the Application
+## 5.Run the Application
 
 python run.py
 
@@ -62,13 +62,13 @@ All protected routes require a JWT token.
 
 👉 Add token in request header: Authorization: Bearer <your_token>
 
-## 🧪 Running Tests
+##  Running Tests
 
 python -m unittest discover
 
 ---
 
-## 🎯 Project Highlights
+##  Project Highlights
 
 -Secure API using JWT authentication
 
