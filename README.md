@@ -27,24 +27,24 @@ This API allows users to securely manage tasks with role-based access, paginatio
 
 ## ⚙️ Setup & Installation
 
-### 1️⃣ Clone the Repository
-```bash
+## 1️⃣ Clone the Repository
+
 git clone https://github.com/PraveenKrSharma2002/TaskManager-API.git
 cd TaskManager
 
-### 2️⃣ Create Virtual Environment
+## 2️⃣ Create Virtual Environment
 
 python -m venv venv
 
-### 3️⃣ Activate Virtual Environment
+## 3️⃣ Activate Virtual Environment
 
 Windows: venv\Scripts\activate
 
-### 4️⃣ Install Dependencies
+## 4️⃣ Install Dependencies
 
 pip install -r requirements.txt
 
-### 5️⃣ Run the Application
+## 5️⃣ Run the Application
 
 python run.py
 
@@ -67,7 +67,8 @@ All protected routes require a JWT token.
 python -m unittest discover
 
 ---
-### 🎯 Project Highlights
+
+## 🎯 Project Highlights
 
 -Secure API using JWT authentication
 -Clean and modular code structure
