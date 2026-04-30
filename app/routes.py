@@ -8,10 +8,10 @@ main = Blueprint('main', __name__)
 
 @main.route('/')
 def home():
-    return jsonify({"msg": "Task Manager API Running 🚀"})
+    return jsonify({"msg": "Task Manager API Running "})
 
 
-# ✅ ADD TASK
+#  ADD TASK
 @main.route('/add', methods=['POST'])
 @jwt_required()
 def add_task():
@@ -33,7 +33,7 @@ def add_task():
     return jsonify({"msg": "Task Added"}), 201
 
 
-# ✅ ADD MULTIPLE TASKS
+#  ADD MULTIPLE TASKS
 @main.route('/add-multiple', methods=['POST'])
 @jwt_required()
 def add_multiple_tasks():
@@ -57,13 +57,13 @@ def add_multiple_tasks():
     return jsonify({"msg": "Multiple tasks added"}), 201
 
 
-# ✅ GET TASKS (ROLE + PAGINATION + FILTERING)
+#  GET TASKS (ROLE + PAGINATION + FILTERING)
 @main.route('/tasks', methods=['GET'])
 @jwt_required()
 def get_tasks():
     user_id = int(get_jwt_identity())
     claims = get_jwt()
-    role = claims.get("role", "user")  # 🔥 JWT से role लो
+    role = claims.get("role", "user") 
 
     # Query params
     page = request.args.get('page', 1, type=int)
@@ -72,18 +72,18 @@ def get_tasks():
 
     query = Task.query
 
-    # 🔐 Role-based access
+    #  Role-based access
     if role != "admin":
         query = query.filter_by(user_id=user_id)
 
-    # 🔍 Filtering (admin ही दूसरे users filter कर सके)
+    #  Filtering 
     if filter_user:
         if role == "admin":
             query = query.filter_by(user_id=filter_user)
         else:
             return jsonify({"msg": "Only admin can filter by user_id"}), 403
 
-    # 📄 Pagination
+    #  Pagination
     tasks = query.paginate(page=page, per_page=limit, error_out=False)
 
     result = []
@@ -101,7 +101,7 @@ def get_tasks():
     })
 
 
-# ✅ DELETE TASK
+#  DELETE TASK
 @main.route('/delete/<int:id>', methods=['DELETE'])
 @jwt_required()
 def delete_task(id):
@@ -123,7 +123,7 @@ def delete_task(id):
     return jsonify({"msg": "Task deleted"})
 
 
-# ✅ UPDATE TASK
+#  UPDATE TASK
 @main.route('/update/<int:id>', methods=['PUT'])
 @jwt_required()
 def update_task(id):
