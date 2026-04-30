@@ -27,58 +27,54 @@ This API allows users to securely manage tasks with role-based access, paginatio
 
 ## ⚙️ Setup & Installation
 
-git clone <[repo-ur](https://github.com/PraveenKrSharma2002/TaskManager-API)>
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/PraveenKrSharma2002/TaskManager-API.git
 cd TaskManager
 
-2️⃣ Create Virtual Environment
+### 2️⃣ Create Virtual Environment
+
 python -m venv venv
 
-3️⃣ Activate Virtual Environment
+### 3️⃣ Activate Virtual Environment
 
-Windows:
-venv\Scripts\activate
+Windows: venv\Scripts\activate
 
-Mac/Linux:
-source venv/bin/activate
+### 4️⃣ Install Dependencies
 
-4️⃣ Install Dependencies
 pip install -r requirements.txt
 
-5️⃣ Run the Application
+### 5️⃣ Run the Application
+
 python run.py
 
-👉 Server will start at:
+---
 
+👉 Server will start at:
 http://127.0.0.1:5000
-🔗 API Endpoints
-Method	Endpoint	Description
-POST	/register	Register new user
-POST	/login	Login & get JWT token
-POST	/add	Add new task
-GET	/tasks	Get tasks (pagination + filtering)
-PUT	/update/<id>	Update task
-DELETE	/delete/<id>	Delete task
+
+## 🔗 API Endpoints
+<img width="762" height="385" alt="image" src="https://github.com/user-attachments/assets/14c2669c-3ced-4a02-a6df-b4e004ebfbce" />
 
 🔐 Authentication
+
 All protected routes require a JWT token.
 
-👉 Add token in request header:
-Authorization: Bearer <your_token>
+👉 Add token in request header: Authorization: Bearer <your_token>
 
-🧪 Running Tests
+## 🧪 Running Tests
+
 python -m unittest discover
 
-📌 Example Request
-Add Task
-{
-  "title": "Complete assignment"
-}
+---
+### 🎯 Project Highlights
 
-🎯 Project Highlights
-Secure API using JWT authentication
-Clean and modular code structure
-Implements real-world backend concepts
-Ready for production-level extension
+-Secure API using JWT authentication
+-Clean and modular code structure
+-Implements real-world backend concepts
+-Ready for production-level extension
 
-👨‍💻 Author
+---
+## 👨‍💻 Author
+
 Praveen Kumar Sharma
