@@ -71,8 +71,11 @@ python -m unittest discover
 ## 🎯 Project Highlights
 
 -Secure API using JWT authentication
+
 -Clean and modular code structure
+
 -Implements real-world backend concepts
+
 -Ready for production-level extension
 
 ---
