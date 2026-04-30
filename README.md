@@ -27,9 +27,7 @@ This API allows users to securely manage tasks with role-based access, paginatio
 
 ## ⚙️ Setup & Installation
 
-### 1️⃣ Clone the Repository
-```bash
-git clone <repo-url>
+git clone <[repo-ur](https://github.com/PraveenKrSharma2002/TaskManager-API)>
 cd TaskManager
 
 2️⃣ Create Virtual Environment
